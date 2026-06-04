@@ -1,5 +1,23 @@
 # Acceptance tests
 
+## Running Acceptance tests
+
+All acceptance tests require the following environment variables to be set:
+
+```sh
+export OS_AUTH_URL="example.com"
+export OS_REGION_NAME="region-1"
+export OS_DOMAIN_NAME="123456"          # your account ID
+export OS_USERNAME="your-service-user"
+export OS_PASSWORD="your-service-password"
+```
+
+For tests that require a project scope, also set:
+
+```sh
+export INFRA_PROJECT_ID="your-project-id"
+```
+
 ## Running Acceptance tests for Global Router
 
 Acceptance tests for Global Router requires definition Environment variables, because tests use references on existing Network resources in Cloud and Dedicated servers.

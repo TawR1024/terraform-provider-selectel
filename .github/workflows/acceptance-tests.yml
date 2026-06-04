@@ -32,3 +32,5 @@ jobs:
           OS_DOMAIN_NAME: ${{ secrets.OS_DOMAIN_NAME }}
           OS_USERNAME: ${{ secrets.OS_USERNAME }}
           OS_PASSWORD: ${{ secrets.OS_PASSWORD }}
+          OS_AUTH_URL: ${{secrets.OS_AUTH_URL}}
+          OS_REGION_NAME: ${{secrets.OS_REGION_NAME}}
